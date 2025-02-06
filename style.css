@@ -1,0 +1,156 @@
+/*
+-- COLOR PALETTE --
+#2C2B30 - lighter gray 
+#222327 - darker gray
+#F2EDE2 - cream white
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F2EDE2;
+}
+
+body {
+    background-color: #222327;
+}
+
+/* Navbar */
+.nav-bar {
+    background-color: #2C2B30;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1%;
+}
+
+.logo {
+    width: 100px;
+    height: 64px;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #222327;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #F2EDE2;
+    color: #222327;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4B4A58;
+    border-radius: 10px;
+}
+
+/* Main content */
+.content {
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.classroom {
+    border-radius: 20px;
+}
+
+@media (max-width: 450px) {
+    .classroom {
+        width: 80vw;
+    }
+
+    /* Fonts and text */
+    h1 {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    h2 {
+        margin: 1rem 0 0 0;
+    }
+
+    p {
+        margin: 2px 0;
+    }
+
+    li {
+        margin: 2px 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .classroom {
+        width: 80vw;
+    }
+
+    /* Fonts and text */
+    h1 {
+        text-align: center;
+        margin: 1rem 0;
+        font-size: 3rem;
+    }
+
+    h2 {
+        margin: 1rem 0 0 0;
+        font-size: 2rem;
+    }
+
+    p {
+        margin: 2px 0;
+        font-size: 1.5rem;
+    }
+
+    li {
+        margin: 2px 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 801px) {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .classroom {
+        width: 35vw;
+    }
+
+    .info {
+        width: 35vw;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 1rem 0;
+        font-size: 4rem;
+    }
+
+    h2 {
+        margin: 1rem 0 0 0;
+        font-size: 3rem;
+    }
+
+    p {
+        margin: 2px 0;
+        font-size: 2rem;
+    }
+
+    li {
+        margin: 2px 1rem;
+        font-size: 2rem;
+    }
+}
